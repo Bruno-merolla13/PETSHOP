@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e6f2ff; /* Azul claro */
+    color: #003366; /* Azul oscuro */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Azul oscuro */
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header .search-bar input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.header .search-bar button {
+    background-color: #00509e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header .contact {
+    text-align: right;
+}
+
+/* Categorías */
+.categories {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre categorías */
+    align-items: center;
+    background-color: #00509e; /* Azul */
+    padding: 10px 0;
+    gap: 20px; /* Espacio adicional entre bloques */
+    
+}
+
+.category {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Ordena los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.category img {
+    width: 80px; /* Tamaño ajustado de la imagen */
+    height: 80px;
+    border-radius: 50%; /* Hace las imágenes redondas */
+    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+    object-fit: cover; /* Asegura que las imágenes se vean bien dentro del contenedor */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Sombras para resaltar */
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    background-color: #cce7ff;
+    padding: 20px;
+    background-image: url(/img/fondosec.png);
+    object-fit: cover;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: auto;
+}
+
+.carousel-controls button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00509e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-controls .prev {
+    left: 10px;
+}
+
+.carousel-controls .next {
+    right: 10px;
+}
+
+.destacados {
+    text-align: center;
+}
+.producto {
+    margin: 20px 20px 20px 20px;
+    width: 200px;
+    background-color: tomato;
+    border-radius: 25px;
+}
+.producto h3 {
+    text-align: center;
+}
+.producto p {
+    text-align: center;
+}
+.producto img{
+    width: 200px;
+    object-fit: cover;
+    height: auto;
+    border: black;
+}
+.botones{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color:burlywood;
+    
+}
+.animales {
+    color: #FFF;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #D80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  
+}
+.animales:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+.nombresprod {
+    background-color: #D80286;
+    border-radius: 25px;
+    width: 180px;
+    margin-left: 10px;
+    height: 30px;
+    padding-top: 10px;
+    margin-top: -10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header, .categories {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-item img {
+        width: 100%;
+    }
+}
